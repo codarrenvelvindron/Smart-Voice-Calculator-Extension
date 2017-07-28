@@ -7,6 +7,7 @@ A browser Extension, designed to make arithmetic calculations using voice recogn
 - Operations supported : Division, Multiplication, Addition, Subtraction.
 - Order of Operations: BODMAS 
 - More than 20 simultaneous continuous operations supported
+- Language: Browser Default (Any)
 
 Instructions to use:
 > Tap anywhere in the Dark Green section and then start Speaking.
