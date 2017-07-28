@@ -1,13 +1,13 @@
 ![alt text](https://raw.githubusercontent.com/codarrenvelvindron/voice-calculator-extension/master/icon128.png "Voice Calculator")
 # Voice Calculator
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
+[![experimental](http://badges.github.io/stability-badges/dist/experimental.svg)](http://github.com/badges/stability-badges)
 A browser Extension, designed to make arithmetic calculations using voice recognition (Decimal Calculator).
 - Operations supported : Division, Multiplication, Addition, Subtraction.
 - Order of Operations: BODMAS 
-- >20 simultaneous continuous operations supported
+- More than 20 simultaneous continuous operations supported
 
-Instructions:
+Instructions to use:
 > Tap anywhere in the Dark Green section and then start Speaking.
 
 > Add(+) Sub(-) Div(/) and Mul(x) supported.
@@ -18,7 +18,7 @@ Disclaimer:
 This extension was made using an experimental api and some bugs may not be correctable.
 Still, feel free to file any bugs and I will look into it!
 
-Official Page:https://codarren.com/
+Official Page: https://codarren.com/
 
 ## Download
 ### Firefox: 
