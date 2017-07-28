@@ -1,0 +1,15 @@
+{
+  "appName": {
+    "message": "Voice Calculator",
+    "description": "application title"
+  },
+  "appDesc": {
+    "message": "Easily make calculations using your voice", 
+    "description":"Description in chrome store"
+  },
+  "appAction": {
+    "message": "Speak", 
+    "description":"tooltip"
+  }
+}
+

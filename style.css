@@ -1,0 +1,54 @@
+body, html {
+  margin: 0;
+}
+
+html {
+  height: 100%;
+  background-color: #03BC03;	
+}
+
+body {
+  height: inherit;
+  overflow: hidden;
+}
+
+h1 {
+  font-family: sans-serif;
+  font-size: 300%;	
+  text-align: center;
+  padding: 20px;
+}
+
+div {
+  height: 100px;
+  overflow: auto;
+  position: absolute;
+  bottom: 0px;
+  right: 0;
+  left: 0;
+  background-color: rgba(255,255,255,0.2);
+}
+
+ul {
+  margin: 0;
+}
+
+p.output {
+	font-size: 250%;
+    margin: 0;
+    background: yellow;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -10%) }
+
+#status {
+	font-size: 250%;
+    margin: 0;
+    background: red;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -20%) }

@@ -1,0 +1,19 @@
+{
+	"name": "__MSG_appName__",
+	"version": "0.2.9",
+	"description": "__MSG_appDesc__",
+	"default_locale": "en",
+	"short_name": "Voice Calc",
+	"author": "Codarren Velvindron",
+	"browser_action": {
+		"default_title": "__MSG_appAction__",
+		"default_popup": "popup.html",
+		"default_icon": "icon16.png"
+	},
+	"icons": {
+		"16": "icon16.png",
+		"48": "icon48.png",
+		"128": "icon128.png"
+	},
+	"manifest_version": 2
+}
