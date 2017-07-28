@@ -23,9 +23,9 @@ Still, feel free to file any bugs and I will look into it!
 Official Page: https://codarren.com/
 
 ## Download
-### Firefox: 
-### Chrome: 
-### Opera: 
+### Firefox: Unsupported(as of now)
+### Chrome: Release soon
+### Opera: Unsupported(as of now)
 
 ## Changelog
 
