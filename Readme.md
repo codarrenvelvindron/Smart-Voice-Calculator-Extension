@@ -1,4 +1,4 @@
-![alt text](https://raw.githubusercontent.com/codarrenvelvindron/voice-calculator-extension/master/icon128.png "Voice Calculator")
+![alt text](https://raw.githubusercontent.com/codarrenvelvindron/voice-calculator-extension/master/icons/icon128.png "Voice Calculator")
 # Voice Calculator
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![experimental](http://badges.github.io/stability-badges/dist/experimental.svg)](http://github.com/badges/stability-badges)
