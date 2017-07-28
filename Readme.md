@@ -2,6 +2,7 @@
 # Voice Calculator
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![experimental](http://badges.github.io/stability-badges/dist/experimental.svg)](http://github.com/badges/stability-badges)
+
 A browser Extension, designed to make arithmetic calculations using voice recognition (Decimal Calculator).
 - Operations supported : Division, Multiplication, Addition, Subtraction.
 - Order of Operations: BODMAS 
