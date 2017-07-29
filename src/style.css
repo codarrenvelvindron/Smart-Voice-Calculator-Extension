@@ -52,3 +52,25 @@ p.output {
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -20%) }
+
+#language {
+	font-size: 250%;
+	color: white;
+    margin: 0;
+    background: none;
+    position: absolute;
+    top: 22%;
+    left: 5%;
+    margin-right: -10%;
+    transform: translate(-60%, -20%) }
+
+#tlanguage {
+	font-size: 150%;
+	color: white;
+    margin: 0;
+    background: none;
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    margin-right: -10%;
+    transform: translate(-60%, -20%) }

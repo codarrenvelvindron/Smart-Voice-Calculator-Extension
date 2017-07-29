@@ -1,5 +1,5 @@
 ![alt text](https://raw.githubusercontent.com/codarrenvelvindron/voice-calculator-extension/master/icons/icon128.png "Voice Calculator")
-# Voice Calculator Extension
+# Smart Voice Calculator Extension
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![experimental](http://badges.github.io/stability-badges/dist/experimental.svg)](http://github.com/badges/stability-badges)
 
@@ -29,5 +29,5 @@ Official Page: https://codarren.com/
 
 ## Changelog
 
-### Voice Calculator extension- Version 0.2.6 is born - 28/06/2017
+### Smart Voice Calculator extension- Version 0.2.6 is born - 28/06/2017
 * Just does the job, calculates any number using voice

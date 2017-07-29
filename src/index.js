@@ -7,12 +7,14 @@ recognition.maxAlternatives = 1;
 
 var output = document.querySelector('.output');
 el1 = document.getElementById('status');
-
+el2 = document.getElementById('language');
+el2.textContent = window.navigator.language;
 document.body.onclick = function() {
 	recognition.start();
 }
 
 recognition.onresult = function(event) {
+//console.log(window.navigator.language);//works both in Mozilla and chrome
 	var last = event.results.length - 1;
 	var number = event.results[last][0].transcript;
 	num = number.toString();
