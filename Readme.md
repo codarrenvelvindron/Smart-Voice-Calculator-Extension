@@ -29,5 +29,16 @@ Official Page: https://codarren.com/
 
 ## Changelog
 
+### Smart Voice Calculator extension- Version 0.3.6
+* Improved alculations involving more than 2 numbers (Suggested by lorix)
+* Multilingual calculations
+* Interactivity (show calculations as they are spoken)
+* UI Beautify
+* Language override
+* Added confidence level counter
+* Show Browser locale (and default language for user)
+* Name change : Smart Voice Calculator
+* Make interrim results an option
+
 ### Smart Voice Calculator extension- Version 0.2.6 is born - 28/06/2017
 * Just does the job, calculates any number using voice

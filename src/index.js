@@ -5,16 +5,44 @@ var recognition = new SpeechRecognition();
 recognition.interimResults = true;
 recognition.maxAlternatives = 1;
 
+function languageOverride(){
+	if (this.value != 0){
+		recognition.lang =  this.value;
+}
+}
+
+console.log(recognition.lang);
+var languageList = ["ar", "am", "bg", "bn", "ca", "cs", "da", "de", "el", "en", "en_GB", "en_US", "es", "es_419", "et", "fa", "fi", "fil", "fr", "gu", "he", "hi", "hr", "hu", "id", "it", "ja", "kn", "ko", "lt", "lv", "ml", "mr", "ms", "nl", "no", "pl", "pt_BR", "pt-PT", "ro", "ru", "sk", "sl", "sr", "sv", "sw", "ta", "te", "th", "tr", "uk", "vi", "zh_CN", "zh_TW"];
 var output = document.querySelector('.output');
-el1 = document.getElementById('status');
-el2 = document.getElementById('language');
+var el1 = document.querySelector('.status');
+var el2 = document.querySelector('.language');
 el2.textContent = window.navigator.language;
+el3 = document.getElementById('confidence');
+el4 = document.getElementById('dLanguages');
+for(var i = 0; i < languageList.length; i++){
+	var langs = document.createElement('option');
+	langs.textContent = languageList[i];
+	langs.value = languageList[i];
+	el4.appendChild(langs);
+}
+el5 = document.getElementById('tempresults');
+
+function interrimcheck() {
+	if (el5.checked == true){
+		recognition.stop();		
+		recognition.interimResults = true;
+}
+	else {
+		recognition.stop();		
+		recognition.interimResults = false;
+}
+}
+
 document.body.onclick = function() {
 	recognition.start();
 }
 
 recognition.onresult = function(event) {
-//console.log(window.navigator.language);//works both in Mozilla and chrome
 	var last = event.results.length - 1;
 	var number = event.results[last][0].transcript;
 	num = number.toString();
@@ -81,7 +109,10 @@ recognition.onresult = function(event) {
 	adder(res);
 	subtracker(res);
 	output.textContent = x+'='+res;
+	confidenceLevels = (event.results[0][0].confidence * 100);
+	el3.textContent = confidenceLevels.toFixed(0) + "%";
 	}
+
 recognition.onstart = function() {
   el1.textContent ="Listening...";	
   recognition.stop();
@@ -101,3 +132,6 @@ recognition.onnomatch = function(event) {
 recognition.onerror = function(event) {
   el1.textContent = 'Error occured:' + event.error;
 }
+
+document.getElementById("dLanguages").addEventListener("change",languageOverride);
+document.getElementById("tempresults").addEventListener("change",interrimcheck);

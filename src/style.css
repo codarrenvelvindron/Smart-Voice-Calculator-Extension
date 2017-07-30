@@ -19,6 +19,14 @@ h1 {
   padding: 20px;
 }
 
+h2 {
+  font-family: sans-serif;
+  font-size: 200%;
+  top: 20%;	
+  text-align: center;
+  padding: 2px;
+  	
+}
 div {
   height: 100px;
   overflow: auto;
@@ -38,33 +46,34 @@ p.output {
     margin: 0;
     background: yellow;
     position: absolute;
-    top: 50%;
+    top: 30%;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -10%) }
 
-#status {
+p.status {
 	font-size: 250%;
+	color: black;
     margin: 0;
-    background: red;
+    background: white;
     position: absolute;
-    top: 20%;
+    top: 25%;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -20%) }
 
-#language {
+p.language {
 	font-size: 250%;
 	color: white;
     margin: 0;
     background: none;
     position: absolute;
-    top: 22%;
+    top: 40%;
     left: 5%;
     margin-right: -10%;
     transform: translate(-60%, -20%) }
 
-#tlanguage {
+p.tlanguage {
 	font-size: 150%;
 	color: white;
     margin: 0;
@@ -74,3 +83,73 @@ p.output {
     left: 5%;
     margin-right: -10%;
     transform: translate(-60%, -20%) }
+
+#tconfidence {
+	font-size: 150%;
+	color: white;
+    margin: 0;
+    background: none;
+    position: absolute;
+    top: 40%;
+    right: 7%;
+    margin-right: -10%;
+    transform: translate(-60%, -20%) }
+
+#confidence {
+	font-size: 250%;
+	color: white;
+    margin: 0;
+    background: none;
+    position: absolute;
+    top: 20%;
+    right: 10%;
+    margin-right: -10%;
+    transform: translate(-60%, -20%) }
+
+
+
+#tlanguageoverride {
+	font-size: 150%;
+	color: white;
+    margin: 0;
+    background: none;
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    margin-right: -10%;
+    transform: translate(-60%, -20%) }
+
+#dLanguages {
+	font-size: 250%;
+	color: white;
+    margin: 0;
+    background: black;
+    position: absolute;
+    top: 33%;
+    left: 5%;
+    margin-right: -10%;
+    transform: translate(-60%, -20%) }
+
+#ttempresults{
+	font-size: 150%;
+	color: white;
+    margin: 0;
+    background: none;
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    margin-right: -10%;
+    transform: translate(-60%, -20%) }
+
+#tempresults{
+	width: 30px;
+	height: 30px;
+	color: white;
+    margin: 0;
+    background: none;
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    margin-right: -10%;
+    transform: translate(-60%, -20%) }
+
