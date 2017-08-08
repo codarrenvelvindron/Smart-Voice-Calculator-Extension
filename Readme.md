@@ -5,16 +5,24 @@
 
 A browser Extension, designed to make arithmetic calculations using voice recognition (Decimal Calculator).
 - Operations supported : Division, Multiplication, Addition, Subtraction.
+- Additional Operations supported : power of(^) (version 0.5.6)
 - Order of Operations: BODMAS 
 - More than 20 simultaneous continuous operations supported
 - Language: Browser Default (Any)
+- Shows conficence level!
+- Temporary results show what is happenning behind the scenes
+- Language Override - All major languages and dialects are supported. (Basic operations except english)
+
 
 Instructions to use:
 > Tap anywhere in the Dark Green section and then start Speaking.
-
-> Add(+) Sub(-) Div(/) and Mul(x) supported.
-
-> This is an experimental app.
+> Voice commands can be spoken in any order:
+> (+) - "Plus"
+> (-) - "Minus"
+> (/) - "Divided by"
+> (x) - "Times"
+> (^) - "To the power of"
+> This app is based on an experimental API
 
 Disclaimer:
 This extension was made using an experimental api and some bugs may not be correctable.
@@ -29,16 +37,10 @@ Official Page: https://codarren.com/
 
 ## Changelog
 
-### Smart Voice Calculator extension- Version 0.3.6
-* Improved alculations involving more than 2 numbers (Suggested by lorix)
-* Multilingual calculations
-* Interactivity (show calculations as they are spoken)
-* UI Beautify
-* Language override
-* Added confidence level counter
-* Show Browser locale (and default language for user)
-* Name change : Smart Voice Calculator
-* Make interrim results an option
+### Smart Voice Calculator - 0.5.6 - 08/08/2017
+* Major Bug fixes have been done
+* Added 'power of' to the list of operations
+
 
 ### Smart Voice Calculator extension- Version 0.2.6 is born - 28/06/2017
 * Just does the job, calculates any number using voice

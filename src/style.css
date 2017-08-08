@@ -8,12 +8,12 @@ html {
 }
 
 body {
-  height: inherit;
-  overflow: hidden;
+  margin: 0;
+  padding:0;
 }
 
 h1 {
-  font-family: sans-serif;
+  font-family: trs-million;
   font-size: 300%;	
   text-align: center;
   padding: 20px;
@@ -37,28 +37,40 @@ div {
   background-color: rgba(255,255,255,0.2);
 }
 
-ul {
-  margin: 0;
+#calc {
+	  height: 800px;
+	width 1000px;
+  overflow: auto;
+  position: absolute;
+  bottom: -5%;
+  right: 50;
+  margin:0;
+  background-color: rgba(255,255,255,0.2);
 }
 
-p.output {
-	font-size: 250%;
-    margin: 0;
-    background: yellow;
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -10%) }
+@font-face{
+	font-family: OpenSans-SemiBold;
+	src: url(fonts/OpenSans-SemiBold.ttf);
+}
 
+#output {
+	font-family: OpenSans-SemiBold;
+	font-size: 200%;
+	position: absolute;
+	top: 50%;
+	right: 50%;
+	margin: 0;
+	width: 200px;
+	height: 400px;
+}
 p.status {
-	font-size: 250%;
+	font-size: 150%;
 	color: black;
     margin: 0;
     background: white;
     position: absolute;
-    top: 25%;
-    left: 50%;
+    top: 47%;
+    left: 47%;
     margin-right: -50%;
     transform: translate(-50%, -20%) }
 
@@ -106,29 +118,27 @@ p.tlanguage {
     margin-right: -10%;
     transform: translate(-60%, -20%) }
 
-
-
 #tlanguageoverride {
 	font-size: 150%;
 	color: white;
     margin: 0;
     background: none;
     position: absolute;
-    top: 30%;
-    left: 10%;
+    top: 86%;
+    left: 19%;
     margin-right: -10%;
-    transform: translate(-60%, -20%) }
+    transform: translate(-5%, -5%) }
 
 #dLanguages {
-	font-size: 250%;
+	font-size: 100%;
 	color: white;
     margin: 0;
     background: black;
     position: absolute;
-    top: 33%;
-    left: 10%;
+    top: 90%;
+    left: 20%;
     margin-right: -10%;
-    transform: translate(-60%, -20%) }
+    transform: translate(-5%, -5%) }
 
 #ttempresults{
 	font-size: 150%;
@@ -136,10 +146,10 @@ p.tlanguage {
     margin: 0;
     background: none;
     position: absolute;
-    top: 40%;
-    left: 10%;
+    top: 86%;
+    left: 67%;
     margin-right: -10%;
-    transform: translate(-60%, -20%) }
+    transform: translate(-5%, -5%) }
 
 #tempresults{
 	width: 30px;
@@ -148,9 +158,16 @@ p.tlanguage {
     margin: 0;
     background: none;
     position: absolute;
-    top: 40%;
-    left: 15%;
+    top: 90%;
+    left: 70%;
+    margin-right: -10%;
+    transform: translate(-5%, -5%) }
+
+#calcbackground{
+	margin: 0;
+    background: none;
+    position: absolute;
+    top: 35%;
+    left: 50%;
     margin-right: -10%;
     transform: translate(-60%, -20%) }
-
-

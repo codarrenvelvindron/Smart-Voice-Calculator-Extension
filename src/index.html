@@ -10,20 +10,29 @@
   </head>
 
   <body>
-    <h1>Smart Voice Calculator</h1>
-	<h2>+ - / x</h2>  
+
     <div>
 		<p class="tlanguage"><em>Detected Language</em></p>
 	 	<p class="language"><em>Default Language</em></p>
 	 	<p id="tconfidence"><em>Confidence Level</em></p>
 	 	<p id="confidence"><em></em></p>		
     </div>
-     <p class="output"><em>Results are here!</em></p>
+	<div id = calc>  
+	<img id="calcbackground" src="voicecalcbackground.png">  	 
+    <ul id="output">
+	<li></li>
+	<li hidden></li>
+	<li hidden></li>
+	<li hidden></li>
+	<li hidden></li>
+	</ul>
 	 <p class="status"><em>Click and Speak!</em></p>
 	  <p id="tlanguageoverride"><em>Language Override</em></p>
-	  <input type="checkbox" id="tempresults" value="tempresultsenabled" checked><p id="ttempresults"><em>Temporary results</em></p><br>
+	  <input type="checkbox" id="tempresults" value="tempresultsenabled"><p id="ttempresults"><em>Temporary results</em></p><br>
 	<select id="dLanguages">
 	</select>
+	  </div>	
+
     <script src="index.js"></script>
   </body>
 </html>
