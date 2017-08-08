@@ -15,14 +15,14 @@ A browser Extension, designed to make arithmetic calculations using voice recogn
 
 
 Instructions to use:
-> Tap anywhere in the Dark Green section and then start Speaking.
-> Voice commands can be spoken in any order:
-> (+) - "Plus"
-> (-) - "Minus"
-> (/) - "Divided by"
-> (x) - "Times"
-> (^) - "To the power of"
-> This app is based on an experimental API
+- Tap anywhere in the Dark Green section and then start Speaking.
+- Voice commands can be spoken in any order:
+- (+) - "Plus"
+- (-) - "Minus"
+- (/) - "Divided by"
+- (x) - "Times"
+- (^) - "To the power of"
+- This app is based on an experimental API
 
 Disclaimer:
 This extension was made using an experimental api and some bugs may not be correctable.
