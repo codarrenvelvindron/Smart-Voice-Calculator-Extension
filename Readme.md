@@ -25,7 +25,7 @@ Instructions to use:
 - This app is based on an experimental API
 
 Disclaimer:
-This extension was made using an experimental api and some bugs may not be correctable.
+>This extension was made using an experimental api and some bugs may not be correctable.
 Also, the app and back api will get used to your voice after a few tries.
 Still, feel free to file any bugs and I will look into it!
 
