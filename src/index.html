@@ -15,7 +15,7 @@
 		<p class="tlanguage"><em>Detected Language</em></p>
 	 	<p class="language"><em>Default Language</em></p>
 	 	<p id="tconfidence"><em>Confidence Level</em></p>
-	 	<p id="confidence"><em></em></p>		
+	 	<p id="confidence"><em></em></p>
     </div>
 	<div id = calc>  
 	<img id="calcbackground" src="voicecalcbackground.png">  	 
@@ -26,14 +26,26 @@
 	<li hidden></li>
 	<li hidden></li>
 	</ul>
-	 <p class="status"><em>Click and Speak!</em></p>
-	  <p id="tlanguageoverride"><em>Language Override</em></p>
-	  <input type="checkbox" id="tempresults" value="tempresultsenabled"><p id="ttempresults"><em>Temporary results</em></p><br>
-	<select id="dLanguages">
-	</select>
-	  <input type="checkbox" id="approxim" value="approxenabled" checked><p id="tapproxim"><em>Approximate results</em></p><br>
-	  <input type="checkbox" id="muted" value="muted"><p id="tmuted"><em>Mute</em></p><br>		
-	  </div>	
+	<p class="status"><em>Click and Speak!</em></p>
+	<p id="tinstructions"><em> Tap anywhere on the calculator section <br/>and then start Speaking.<br/>
+Voice commands can be spoken in any order:<br/>
+(+) - "Plus" <br/>
+(-) - "Minus" <br/>
+(/) - "Divided by" <br/>
+(x) - "Times" <br/>
+(^) - "To the power of" <br/>
+This app is based on an experimental API <br/>
+/!\Application stuck? Click again/!\ <br/>
+		</em></p>
+	  <input type="checkbox" id="instructions" value="instenabled" hidden="true"><p id="tinst" hidden="true"><em>Show instructions</em></p><br>
+		
+	<p id="tlanguageoverride" hidden="true"><em>Language Override</em></p>
+	<input type="checkbox" id="tempresults" value="tempresultsenabled" hidden="true"><p id="ttempresults" hidden="true"><em>Temporary results</em></p><br>
+	<select id="dLanguages" hidden="true"></select>
+	<input type="checkbox" id="approxim" value="approxenabled" checked hidden="true"><p id="tapproxim" hidden="true"><em>Approximate results</em></p><br>
+	<input type="checkbox" id="muted" value="muteddisabled" hidden="true"><p id="tmuted" hidden="true"><em>Mute</em></p><br>
+	<input type="checkbox" id="adv" value="advdisabled"><p id="tadv"><em>Advanced Options</em></p><br>		
+	</div>	
 
     <script src="index.js"></script>
   </body>

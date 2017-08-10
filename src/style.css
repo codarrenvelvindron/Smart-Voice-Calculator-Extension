@@ -209,6 +209,63 @@ p.tlanguage {
     margin-right: -10%;
     transform: translate(-5%, -5%) }
 
+#tinstructions {
+	font-size: 150%;
+	color: white;
+    margin: 0;
+    background: none;
+    position: absolute;
+    top: 40%;
+    right: 80%;
+    margin-right: -10%;
+    transform: translate(-5%, -5%) }
+
+#tinst {
+	font-size: 150%;
+	color: white;
+    margin: 0;
+    background: none;
+    position: absolute;
+    top: 25%;
+    right: 80%;
+    margin-right: -10%;
+    transform: translate(-5%, -5%) }
+
+#instructions {
+	width: 30px;
+	height: 30px;
+	color: white;
+    margin: 0;
+    background: none;
+    position: absolute;
+    top: 30%;
+    right: 80%;
+    margin-right: -10%;
+    transform: translate(-5%, -5%) }
+
+#tadv {
+	font-size: 150%;
+	color: white;
+    margin: 0;
+    background: none;
+    position: absolute;
+    top: 25%;
+    left: 65%;
+    margin-right: -10%;
+    transform: translate(-5%, -5%) }
+
+#adv {
+	width: 30px;
+	height: 30px;
+	color: white;
+    margin: 0;
+    background: none;
+    position: absolute;
+    top: 30%;
+    left: 65%;
+    margin-right: -10%;
+    transform: translate(-5%, -5%) }
+
 #calcbackground{
 	margin: 0;
     background: none;

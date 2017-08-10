@@ -16,17 +16,27 @@ var el1 = document.querySelector('.status');
 var el2 = document.querySelector('.language');
 el2.textContent = window.navigator.language;
 el3 = document.getElementById('confidence');
-el4 = document.getElementById('dLanguages');
+var el4 = document.getElementById('dLanguages');
 for(var i = 0; i < languageList.length; i++){
 	var langs = document.createElement('option');
 	langs.textContent = languageList[i];
 	langs.value = languageList[i];
 	el4.appendChild(langs);
 }
+
 var el5 = document.getElementById('tempresults');
 var el6 = document.getElementById('approxim');
 var el7 = document.getElementById('muted');
-
+var el8 = document.getElementById('calcbackground');
+var el9 = document.getElementById('tinstructions');
+var el10 = document.getElementById('instructions');
+var el11 = document.getElementById('tinst');
+var el12 = document.getElementById('adv');
+var el13 = document.getElementById('tadv');
+var el14 = document.getElementById('tlanguageoverride');
+var el15 = document.getElementById('ttempresults');
+var el16 = document.getElementById('tmuted');
+var el17 = document.getElementById('tapproxim');
 
 function interrimcheck() {
 	if (el5.checked == true){
@@ -39,10 +49,52 @@ function interrimcheck() {
 }
 }
 
-document.body.onclick = function() {
+el8.onclick = function() {
 	recognition.start();
 }
 
+el9.onclick = function() {
+	if (el9.hidden == false) {
+		el9.hidden = true;
+		el10.hidden =false;
+		el11.hidden =false;
+		instructions.checked = false;
+	}
+	else { el9.hidden = false;}
+}
+
+function showinst(){
+	if (instructions.checked == true){
+		el10.hidden = true;
+		el11.hidden = true;
+		el9.hidden = false;
+		}
+}
+
+function showadv(){
+	if (adv.checked == true){
+		el4.hidden = false;
+		el5.hidden = false;
+		el5.hidden = false;		
+		el6.hidden = false;
+		el7.hidden = false;		
+		el14.hidden = false;
+		el15.hidden = false;
+		el16.hidden = false;
+		el17.hidden = false;
+		}
+	else {
+		el4.hidden = true;
+		el5.hidden = true;
+		el5.hidden = true;		
+		el6.hidden = true;
+		el7.hidden = true;		
+		el14.hidden = true;
+		el15.hidden = true;
+		el16.hidden = true;
+		el17.hidden = true;
+		}	
+}
 recognition.onresult = function(event) {
 	var last = event.results.length - 1;
 	var number = event.results[last][0].transcript;
@@ -205,3 +257,5 @@ recognition.onerror = function(event) {
 
 document.getElementById("dLanguages").addEventListener("change",languageOverride);
 el5.addEventListener("change",interrimcheck);
+el10.addEventListener("change",showinst);
+el12.addEventListener("change",showadv);
