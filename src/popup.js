@@ -2,6 +2,6 @@ window.onload = function(){
 	openIndex();
 
 function openIndex() {
- chrome.tabs.create({active: true, url: "index.html"});
+ chrome.tabs.create({active: true, url: "src/index.html"});
 }
 }

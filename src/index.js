@@ -234,7 +234,14 @@ recognition.onresult = function(event) {
 		message.lang = recognition.lang;
 	speechSynthesis.speak(message);
 	}
+	
 }
+function muter(){
+	if (el7.checked == true){
+		speechSynthesis.cancel();
+}
+}
+
 recognition.onstart = function() {
   el1.textContent ="Listening...";	
   recognition.stop();
@@ -259,3 +266,4 @@ document.getElementById("dLanguages").addEventListener("change",languageOverride
 el5.addEventListener("change",interrimcheck);
 el10.addEventListener("change",showinst);
 el12.addEventListener("change",showadv);
+el7.addEventListener("change",muter);

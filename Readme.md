@@ -33,8 +33,14 @@ Official Page: https://codarren.com/
 ### Opera: Unsupported(as of now)
 
 ## Changelog
+### Smart Voice Calculator - 0.7.6 - 10/08/2017
+* Corrected a bug with mute
+
+### Smart Voice Calculator - 0.7.5 - 10/08/2017
+* Corrected a bug with mute
+
 ### Smart Voice Calculator - 0.7.4 - 10/08/2017
-* Added additional instruction
+* Added additional instructions
 
 ### Smart Voice Calculator - 0.7.3 - 10/08/2017
 * Added advanced options
