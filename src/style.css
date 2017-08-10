@@ -50,7 +50,7 @@ div {
 
 @font-face{
 	font-family: OpenSans-SemiBold;
-	src: url(fonts/OpenSans-SemiBold.ttf);
+	src: url(OpenSans-SemiBold.ttf);
 }
 
 #output {
@@ -124,8 +124,8 @@ p.tlanguage {
     margin: 0;
     background: none;
     position: absolute;
-    top: 86%;
-    left: 19%;
+    top: 40%;
+    left: 65%;
     margin-right: -10%;
     transform: translate(-5%, -5%) }
 
@@ -135,8 +135,54 @@ p.tlanguage {
     margin: 0;
     background: black;
     position: absolute;
-    top: 90%;
-    left: 20%;
+    top: 45%;
+    left: 65%;
+    margin-right: -10%;
+    transform: translate(-5%, -5%) }
+
+#tapproxim {
+	font-size: 150%;
+	color: white;
+    margin: 0;
+    background: none;
+    position: absolute;
+    top: 50%;
+    left: 65%;
+    margin-right: -10%;
+    transform: translate(-5%, -5%) }
+
+#approxim {
+	width: 30px;
+	height: 30px;
+	color: white;
+    margin: 0;
+    background: black;
+    position: absolute;
+    top: 54%;
+    left: 65%;
+    margin-right: -10%;
+    transform: translate(-5%, -5%) }
+
+#tmuted {
+	font-size: 150%;
+	color: white;
+    margin: 0;
+    background: none;
+    position: absolute;
+    top: 59%;
+    left: 65%;
+    margin-right: -10%;
+    transform: translate(-5%, -5%) }
+
+#muted {
+	width: 30px;
+	height: 30px;
+	color: white;
+    margin: 0;
+    background: black;
+    position: absolute;
+    top: 64%;
+    left: 65%;
     margin-right: -10%;
     transform: translate(-5%, -5%) }
 
@@ -146,8 +192,8 @@ p.tlanguage {
     margin: 0;
     background: none;
     position: absolute;
-    top: 86%;
-    left: 67%;
+    top: 69%;
+    left: 65%;
     margin-right: -10%;
     transform: translate(-5%, -5%) }
 
@@ -158,8 +204,8 @@ p.tlanguage {
     margin: 0;
     background: none;
     position: absolute;
-    top: 90%;
-    left: 70%;
+    top: 74%;
+    left: 65%;
     margin-right: -10%;
     transform: translate(-5%, -5%) }
 

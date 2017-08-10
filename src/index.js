@@ -24,6 +24,8 @@ for(var i = 0; i < languageList.length; i++){
 	el4.appendChild(langs);
 }
 var el5 = document.getElementById('tempresults');
+var el6 = document.getElementById('approxim');
+var el7 = document.getElementById('muted');
 
 
 function interrimcheck() {
@@ -46,9 +48,8 @@ recognition.onresult = function(event) {
 	var number = event.results[last][0].transcript;
 	num = number.toString();
 	var x = num.replace(/plus/g,"+").replace(/minus/g,"-").replace(/x/g,"*").replace(/X/g,"*").replace(/divide/g,"/").replace(/d/g,"").replace(/ by/g,"");
-	//x = x.replace(/^/g, "po");
+	x = x.replace(/to the /g,"").replace(/ of/g,"").replace(/power/g, "^").replace(/puissance/g, "^");
 	var res = x.trim();
-	console.log(res);
 	res = res.toString();
 	res = res.split(" ");
 
@@ -116,7 +117,7 @@ recognition.onresult = function(event) {
 		if (oldope > -1){res.splice(oldope, 1); }
 		var old = value2;	
 		if (old > -1){res.splice(old, 1); }
-		console.log(res);
+
 		});
 	}
 	powerof(res);	
@@ -124,17 +125,31 @@ recognition.onresult = function(event) {
 	multiplier(res);
 	subtracker(res);
 	adder(res);
-
 	displayresults();
-	
+	if (muted.checked == true){
+		recognition.stop();}
+	else {
+		speakresults();
+	}
+
 	function displayresults(){
-	var resultfinal = x+' = '+res;
+	var res2 = res[0];
+	var n = Number.isInteger(res2);
+	if (el6.checked == true){
+		if (n){
+			res2 = res2;
+		}
+		else {
+		var decimalplaces =  2;
+		res2 = parseFloat(Math.round(res2 * 100) / 100).toFixed(decimalplaces);}
+		}
+		var resultfinal = x+' = '+res2;
+	resultfinal = resultfinal.replace(/\*/g," x")	
 	var li = document.createElement("li");
 	while (output.children.length > 4){
 		output.removeChild(output.firstChild);
 	}
 	li.appendChild(document.createTextNode(resultfinal));
-	//output.insertBefore(li, output.firstChild);
 	output.appendChild(li);
 	confidenceLevels = (event.results[0][0].confidence * 100);
 	el3.textContent = confidenceLevels.toFixed(0) + "%";
@@ -143,6 +158,30 @@ recognition.onresult = function(event) {
 	else { var resultfinal = "letters detected, please try again";
 			output.textContent = resultfinal;		 
 		 }
+	function speakresults(){
+		var message = new SpeechSynthesisUtterance();
+		var allvoices = window.speechSynthesis.getVoices();
+		message.allvoices = allvoices[9];
+		message.voiceURI = 'native';
+		message.volume = 1;
+		message.rate = 1; 
+		message.pitch = 0;
+	var res2 = res[0];
+	var n = Number.isInteger(res2);
+	if (el6.checked == true){
+		if (n){
+			res2 = res2;
+		}
+		else {
+		var decimalplaces =  2;
+		res2 = parseFloat(Math.round(res2 * 100) / 100).toFixed(decimalplaces);}
+		}
+		var resultfinal = x+' = '+res2;
+		resultfinal = resultfinal.replace(/\*/g," x")	
+		message.text = resultfinal;
+		message.lang = recognition.lang;
+	speechSynthesis.speak(message);
+	}
 }
 recognition.onstart = function() {
   el1.textContent ="Listening...";	

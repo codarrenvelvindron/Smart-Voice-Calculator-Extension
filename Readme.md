@@ -4,15 +4,11 @@
 [![experimental](http://badges.github.io/stability-badges/dist/experimental.svg)](http://github.com/badges/stability-badges)
 
 A browser Extension, designed to make arithmetic calculations using voice recognition (Decimal Calculator).
-- Operations supported : Division, Multiplication, Addition, Subtraction.
-- Additional Operations supported : Exponentiation - power of(^) (version 0.5.6) - English only
-- Order of Operations: BODMAS 
-- More than 20 simultaneous continuous operations supported
-- Language: Browser Default (Any)
-- Shows conficence level!
+- Operations supported : Division, Multiplication, Addition, Subtraction
+- Additional Operations supported : Exponentiation - power of(^)- (English and French only) 
+- Shows confidence level!
 - Temporary results show what is happenning behind the scenes
 - Language Override - All major languages and dialects are supported. (Basic operations except english)
-
 
 Instructions to use:
 - Tap anywhere on the calculator section and then start Speaking.
@@ -37,6 +33,24 @@ Official Page: https://codarren.com/
 ### Opera: Unsupported(as of now)
 
 ## Changelog
+### Smart Voice Calculator - 0.7.0 - 10/08/2017
+* Removed unnecessary lines
+
+### Smart Voice Calculator - 0.6.9 - 10/08/2017
+* Added the option to mute or unmute results
+
+### Smart Voice Calculator - 0.6.8 - 09/08/2017
+* Improved layout for options
+
+### Smart Voice Calculator - 0.6.7 - 09/08/2017
+* Results are now approximated by default to 2 decimal places
+* Added approximation as an option
+
+### Smart Voice Calculator - 0.6.0 - 08/08/2017
+* Added voice feedback
+
+### Smart Voice Calculator - 0.5.7 - 08/08/2017
+* Added support for exponentiation (in french)
 
 ### Smart Voice Calculator - 0.5.6 - 08/08/2017
 * Major Bug fixes have been done
