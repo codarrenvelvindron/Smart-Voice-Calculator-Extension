@@ -25,11 +25,11 @@ Disclaimer:
 Also, the app and back api will get used to your voice after a few tries.
 Still, feel free to file any bugs and I will look into it!
 
-Official Page: https://codarren.com/
+Official Page: https://codarren.com/2017/08/smart-voice-calculator-experimentation-gone-right/
 
 ## Download
 ### Firefox: Unsupported(as of now)
-### Chrome: Release soon
+### Chrome: https://chrome.google.com/webstore/detail/elabaeonjnddhgpcpilmdekcgkdcjcka
 ### Opera: Unsupported(as of now)
 
 ## Changelog
